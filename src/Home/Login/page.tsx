@@ -19,8 +19,8 @@ const Login = () => {
     ];
 
     return (
-        <div className="h-fit bg-gradient-to-b from-stone-700 to-stone-950 flex items-center justify-center">
-            <div className="p-10 flex flex-col items-center justify-center h-fit w-1/2 bg-gradient-to-b from-stone-950 to-stone-800 rounded-xl">
+        <div className="h-fit bg-gradient-to-b from-stone-800 to-stone-950 flex items-center justify-center">
+            <div className="p-10 flex flex-col items-center justify-center h-fit w-1/2 bg-gradient-to-b from-stone-950 to-stone-900 rounded-xl">
                 <div>
                     <FaSpotify className="text-6xl text-white" />
                 </div>

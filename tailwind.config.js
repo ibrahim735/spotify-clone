@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        customGray: '#818181',
+        customGray: '#262626',
         spotifyGreen: '#1DB954',
-        spotifyGreenHover: '#2BDD6A'
+        spotifyGreenHover: '#2BDD6A',
       }
     },
   },
