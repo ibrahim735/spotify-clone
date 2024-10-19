@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         customGray: '#262626',
-        spotifyGreen: '#1DB954',
-        spotifyGreenHover: '#2BDD6A',
+        spotifyGreen: '#2BDD6A',
+        spotifyGreenHover: '#4DE085',
       }
     },
   },

@@ -2,7 +2,7 @@ import { FaSpotify } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import { FaApple } from "react-icons/fa";
-import Button from "./components/Button.tsx";
+import Button from "../../common/components/Button.tsx";
 
 const Login = () => {
     type ButtonContents = {
@@ -19,12 +19,12 @@ const Login = () => {
     ];
 
     return (
-        <div className="h-fit bg-gradient-to-b from-stone-800 to-stone-950 flex items-center justify-center">
-            <div className="p-10 flex flex-col items-center justify-center h-fit w-1/2 bg-gradient-to-b from-stone-950 to-stone-900 rounded-xl">
+        <div className="pt-8 h-fit bg-gradient-to-b from-stone-800 to-stone-950 flex items-center justify-center flex-col">
+            <div className="p-10 flex flex-col items-center justify-center h-fit w-[54.5%] bg-gradient-to-b from-stone-950 to-stone-900 rounded-xl">
                 <div>
-                    <FaSpotify className="text-6xl text-white" />
+                    <FaSpotify className="text-4xl text-white" />
                 </div>
-                <h1 className="text-white text-3xl font-bold">Log in to Spotify</h1>
+                <h1 className="mt-2 text-white text-3xl font-bold">Log in to Spotify</h1>
 
                 <div className="mt-8 flex flex-col gap-2">
                     {buttonContents.map((data) => (
@@ -46,11 +46,23 @@ const Login = () => {
                         </div>
 
 
-                        <button className="mt-3 px-2 py-[10px] rounded-full border-transparent text-base font-semibold w-[324px] bg-spotifyGreen hover:bg-spotifyGreenHover hover:scale-[1.03]" type="submit">Log In</button>
+                        <button className="mt-3 px-2 py-[12px] rounded-full border-transparent text-base font-semibold w-[324px] bg-spotifyGreen hover:bg-spotifyGreenHover hover:scale-[1.03]" type="submit">Log In</button>
                     </form>
                 </div>
-
+                <div className="text-white font-medium text-base p-8">
+                    <a className="underline" href=""><p>Forgot your password?</p></a>
+                </div>
+                <div className="text-white font-medium text-base pb-8">
+                    <h2 className="flex gap-2">
+                        <span className="text-stone-300">Don't have an account?</span>
+                        <a className="underline" href=""><span>Sign up for Spotify</span></a>
+                    </h2>
+                </div>
             </div>
+
+            <footer className="mt-8 bg-stone-900 w-full p-8">
+                <p className="text-center text-stone-300 font-normal text-xs">This site is protected by reCAPTCHA and the Google <a className="underline" href="https://policies.google.com/privacy">Privacy Policy</a> and <a className="underline" href="https://policies.google.com/terms">Terms of Service</a> apply</p>
+            </footer>
         </div>
     );
 };

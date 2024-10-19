@@ -1,4 +1,4 @@
-import Login from "./Home/Login/page"
+import Login from "./features/auth/LoginPage"
 
 const App = () => {
   return (
