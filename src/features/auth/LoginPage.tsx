@@ -3,21 +3,23 @@ import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import { FaApple } from "react-icons/fa";
 import Button from "../../common/components/Button.tsx";
+import { Link } from "react-router-dom";
+
+
+export type ButtonContents = {
+    id: number;
+    icon?: JSX.Element;
+    text: string;
+};
+
+export const buttonContents: ButtonContents[] = [
+    { id: 1, icon: <FcGoogle />, text: "Continue with Google" },
+    { id: 2, icon: <SiFacebook />, text: "Continue with Facebook" },
+    { id: 3, icon: <FaApple />, text: "Continue with Apple" },
+    { id: 4, text: "Continue with phone number" },
+];
 
 const Login = () => {
-    type ButtonContents = {
-        id: number;
-        icon?: JSX.Element;
-        text: string;
-    };
-
-    const buttonContents: ButtonContents[] = [
-        { id: 1, icon: <FcGoogle />, text: "Continue with Google" },
-        { id: 2, icon: <SiFacebook />, text: "Continue with Facebook" },
-        { id: 3, icon: <FaApple />, text: "Continue with Apple" },
-        { id: 3, text: "Continue with phone number" },
-    ];
-
     return (
         <div className="pt-8 h-fit bg-gradient-to-b from-stone-800 to-stone-950 flex items-center justify-center flex-col">
             <div className="p-10 flex flex-col items-center justify-center h-fit w-[54.5%] bg-gradient-to-b from-stone-950 to-stone-900 rounded-xl">
@@ -50,12 +52,12 @@ const Login = () => {
                     </form>
                 </div>
                 <div className="text-white font-medium text-base p-8">
-                    <a className="underline" href=""><p>Forgot your password?</p></a>
+                    <Link className="underline" to="/forgotpassword"><p>Forgot your password?</p></Link>
                 </div>
                 <div className="text-white font-medium text-base pb-8">
                     <h2 className="flex gap-2">
-                        <span className="text-stone-300">Don't have an account?</span>
-                        <a className="underline" href=""><span>Sign up for Spotify</span></a>
+                        <span className="text-stone-400">Don't have an account?</span>
+                        <Link className="underline text-white" to="/signup"><span>Sign up for Spotify</span></Link>
                     </h2>
                 </div>
             </div>
