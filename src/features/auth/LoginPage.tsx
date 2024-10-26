@@ -22,7 +22,7 @@ export const buttonContents: ButtonContents[] = [
 const Login = () => {
     return (
         <div className="pt-8 h-fit bg-gradient-to-b from-firstGradient to-secondGradient flex items-center justify-center flex-col">
-            <div className="p-10 flex flex-col items-center justify-center h-fit w-[54.5%] bg-gradient-to-b from-secondGradient to-[hsl(0,0%,7%)] rounded-xl">
+            <div className="p-10 flex flex-col items-center justify-center h-fit w-2/5 bg-gradient-to-b from-secondGradient to-[hsl(0,0%,7%)] rounded-xl">
                 <Link className="cursor-default" to="/">
                     <FaSpotify className="text-4xl text-white" />
                 </Link>
@@ -47,8 +47,10 @@ const Login = () => {
                             <input className="px-2 py-[10px] rounded-md w-[324px] outline outline-offset-2 outline-1 bg-[#fffcc8] border-2" type="password" name="" id="" />
                         </div>
 
+                        
+                        <Button text="Log in" />
 
-                        <button className="mt-3 px-2 py-[12px] rounded-full border-transparent text-lg font-bold w-[324px] bg-spotifyGreen hover:bg-spotifyGreenHover hover:scale-[1.03]" type="submit">Log In</button>
+                        {/* <button className="mt-3 px-2 py-[12px] rounded-full border-transparent text-lg font-bold w-[324px] bg-spotifyGreen hover:bg-spotifyGreenHover transition hover:scale-[1.03]" type="submit">Log In</button> */}
                     </form>
                 </div>
                 <div className="text-white font-medium text-base p-8">

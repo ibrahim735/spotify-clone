@@ -1,8 +1,8 @@
 import { buttonContents } from "./LoginPage"
 import Button from "../../common/components/Button.tsx";
 import { Link } from "react-router-dom";
-import Footer from "./components/Footer.tsx"
-import Header from "./components/Header.tsx"
+import Footer from "./components/FooterAuth.tsx"
+import Header from "./components/HeaderAuth.tsx"
 
 
 const SignUp = () => {
@@ -26,7 +26,7 @@ const SignUp = () => {
                             </div>
                         </div>
 
-                        <button className="mt-5 px-2 py-[12px] rounded-full border-transparent text-base font-semibold w-[324px] bg-spotifyGreen hover:bg-spotifyGreenHover" type="submit">Next</button>
+                        <button className="mt-5 px-2 py-[12px] rounded-full border-transparent text-base font-semibold w-full bg-spotifyGreen hover:bg-spotifyGreenHover" type="submit">Next</button>
                     </form>
                     <div>
                         <div></div>

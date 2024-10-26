@@ -1,5 +1,5 @@
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Header from "./components/HeaderAuth"
+import Footer from "./components/FooterAuth"
 
 const ForgotPassword = () => {
   return (
@@ -21,7 +21,7 @@ const ForgotPassword = () => {
             <p className="mt-4">
               <a className="text-white hover:text-spotifyGreen text-sm font-semibold underline" href="">Need support?</a>
             </p>
-            <button className="mt-7 px-2 py-[12px] rounded-full border-transparent text-base font-semibold w-[322px] bg-spotifyGreen hover:bg-spotifyGreenHover" type="submit">Send link</button>
+            <button className="mt-7 px-2 py-[12px] rounded-full border-transparent text-base font-semibold w-full bg-spotifyGreen hover:bg-spotifyGreenHover" type="submit">Send link</button>
           </form>
         </div>
       </section>
