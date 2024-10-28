@@ -2,8 +2,9 @@
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import { GrApple } from "react-icons/gr";
-import LoginForm from "./components/loginForm.tsx";
 import SocialLogin from "./components/SocialLogin.tsx"
+import FormLogin from "./components/FormLogin.tsx";
+
 
 
 export type ButtonContents = {
@@ -28,7 +29,7 @@ const Login = () => {
 
                 <hr className=" my-8 w-4/5 border-[#302f2f]" />
 
-                <LoginForm />
+                <FormLogin />
 
             </div>
 
