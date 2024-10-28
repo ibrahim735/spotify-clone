@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <div className="flex items-center justify-center w-[43%] px-2 gap-4">
         <div className="w-12 h-12 bg-[#1f1f1f] rounded-full flex items-center justify-center hover:scale-[1.05]">
-          <MdHomeFilled className="text-3xl text-[#b3b3b3]" />
+          <MdHomeFilled className="text-3xl text-white" />
         </div>
 
         <form action="" className="w-[85%]">

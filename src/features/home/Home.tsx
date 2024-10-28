@@ -24,18 +24,18 @@
 
 
 import Navbar from "./components/Navbar"
+import SideNav from "./components/SideNav"
 
 const Home = () => {
   return (
     <div className="bg-[#000000] w-full min-h-screen flex flex-col">
       <Navbar />
 
-      {/* Main content */}
       <div className="flex-grow">
-        {/* Additional content can go here */}
+        <SideNav />
+        
       </div>
 
-      {/* Footer positioned at the bottom */}
       <footer className="p-2 w-full flex items-center">
         <div className="bg-gradient-to-r from-[#af2896] to-[#509bf5] w-full h-[66px] p-3 ">
           <p className="text-white text-sm font-bold">Preview of Spotify</p>
