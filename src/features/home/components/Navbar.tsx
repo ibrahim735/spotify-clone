@@ -6,12 +6,13 @@ import { GrFolderOpen } from "react-icons/gr";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between p-2 ">
+    <div className="flex items-center justify-between ">
       <div className="text-white text-[33px] pl-5 ">
         <Link to="/"><FaSpotify /></Link>
       </div>
 
       <div className="flex items-center justify-center w-[43%] px-2 gap-4">
+
         <div className="w-12 h-12 bg-[#1f1f1f] rounded-full flex items-center justify-center hover:scale-[1.05]">
           <MdHomeFilled className="text-3xl text-white" />
         </div>
@@ -38,13 +39,10 @@ const Navbar = () => {
         </form>
       </div>
 
-      <div className="flex gap-8">
-        <button>
-          <Link className="text-[#b3b3b3] font-bold text-base" to="/signup">Sign up</Link>
-        </button>
-        <button className="bg-white px-8 py-3 rounded-full">
-          <Link className="text-[#000000] font-bold" to="/login">Log in</Link>
-        </button>
+      <div className="flex items-center gap-8">
+        <Link to="/signup"><button className="font-bold text-[#b3b3b3]">Sign up</button></Link>
+
+        <Link to="/login"><button className="font-bold text-[#000000] bg-white px-8 py-3 rounded-full">Log in</button></Link>
       </div>
     </div>
   );
