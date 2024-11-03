@@ -33,9 +33,10 @@ const ResizableDivider: React.FC<ResizableDividerProps> = ({ onResize }) => {
   }, [isResizing]);
 
   return (
-    <div onMouseDown={handleMouseDown} className="cursor-ew-resize bg-transparent hover:bg-white w-[3px] h-[90%]">
-
+    <div className="flex items-center justify-center w-[10px] cursor-grab" onMouseDown={handleMouseDown}>
+      <div  className=" bg-transparent hover:bg-white w-[1px] h-[90%]"></div>
     </div>
+
   );
 };
 

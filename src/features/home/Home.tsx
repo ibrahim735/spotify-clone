@@ -5,6 +5,7 @@ import ResizableDivider from "./components/ResizableDivider";
 import MainContent from "./components/MainContent";
 
 
+
 const Home = () => {
   const [sidebarWidth, setSidebarWidth] = useState(330);
 
@@ -19,9 +20,7 @@ const Home = () => {
 
       <div className="flex h-fit py-2">
         <Sidebar width={sidebarWidth} />
-        <div className="flex items-center justify-center w-[10px]">
-          <ResizableDivider onResize={handleResize} />
-        </div>
+        <ResizableDivider onResize={handleResize} />
         <MainContent />
       </div>
 
