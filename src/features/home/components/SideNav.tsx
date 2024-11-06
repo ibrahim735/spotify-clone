@@ -1,26 +1,27 @@
-import { LuLibrary } from "react-icons/lu";
-import { IoMdAdd } from "react-icons/io";
+import { LuLibrary, LuPlus } from "react-icons/lu";
+type SideNavProps = {
+  width: number;
+}
 
-const Sidebar = ({ width }: { width: number }) => {
+const SideNav = ({ width }: SideNavProps) => {
   return (
     <div
-      className="bg-[#121212] h-[506px] rounded-md"
       style={{ width: `${width}px` }}
+      className="bg-[#121212] rounded-md p-2 "
     >
-      <header className="flex items-center gap-20 fixed w-full h-[10%] p-4 shadow-lg shadow-[#121212]">
-        <div className="flex items-center gap-2">
-          <LuLibrary className="text-3xl text-[#b3b3b3]" />
-          <p className="text-[#b3b3b3] font-bold">Your Library</p>
+      <header className="flex items-center justify-between p-3">
+        <div className="flex items-center gap-3">
+          <LuLibrary className="text-[#b3b3b3] text-3xl" />
+          <p className="text-[#b3b3b3] font-bold" >Your Library</p>
         </div>
-        <IoMdAdd className="text-[#8a8a8a] text-2xl" />
+        <LuPlus className="text-[#a9a9a9] text-xl" />
       </header>
 
-      <div className="">
-        
-      </div>
+      <section>
+
+      </section>
     </div>
   );
 };
 
-export default Sidebar;
-
+export default SideNav;

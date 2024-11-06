@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { MdHomeFilled } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { GrFolderOpen } from "react-icons/gr";
+import Button2 from "./Button2";
 
 const Navbar = () => {
   return (
@@ -42,7 +43,9 @@ const Navbar = () => {
       <div className="flex items-center gap-8">
         <Link to="/signup"><button className="font-bold text-[#b3b3b3]">Sign up</button></Link>
 
-        <Link to="/login"><button className="font-bold text-[#000000] bg-white px-8 py-3 rounded-full">Log in</button></Link>
+        <Link to="/login">
+          <Button2 text="Log in" />
+        </Link>
       </div>
     </div>
   );

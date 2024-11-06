@@ -4,6 +4,8 @@ import SignUp from "./features/auth/SignUp"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./features/home/Home"
 
+
+
 const App = () => {
   return (
     <BrowserRouter>
