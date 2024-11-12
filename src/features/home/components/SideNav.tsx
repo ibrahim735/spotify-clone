@@ -1,5 +1,6 @@
 import { LuLibrary, LuPlus } from "react-icons/lu";
 import Button2 from "./Button2";
+import { TbWorld } from "react-icons/tb";
 type SideNavProps = {
   width: number;
 }
@@ -18,7 +19,7 @@ const SideNav = ({ width }: SideNavProps) => {
                 <LuLibrary className="text-3xl" />
                 <p className="font-bold">Your Library</p>
               </button>
-              <button className="text-[#C5C5C5] text-xl">
+              <button className="text-[#b3b3b3] text-xl h-8 w-8  flex items-center justify-center rounded-full bg-transparent hover:bg-[#222222] hover:text-[#e9e7e7]">
                 <LuPlus />
               </button>
             </div>
@@ -47,13 +48,29 @@ const SideNav = ({ width }: SideNavProps) => {
         </div>
       </div>
 
-      <footer>
+      <footer className="p-4 flex flex-col gap-4">
         <div className="">
-          
+          <div className="flex flex-col">
+            <div className="py-4 text-[#b3b3b3] text-xs flex flex-wrap gap-4 ">
+              <a href="">Legal</a>
+              <a href="">Safety and Privacy Center</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Cookies</a>
+              <a href="">AboutAds</a>
+              <a href="">Accessibility</a>
+            </div>
+            <div>
+              <a className="text-white text-xs hover:underline focus:underline " href="">Cookies</a>
+            </div>
+
+          </div>
         </div>
 
-        <div className="">
-
+        <div>
+          <button className="text-white text-sm flex items-center gap-[2px] font-bold border border-[#b3b3b3] rounded-full py-[5px] px-[14px]">
+            <TbWorld className="text-xl" />
+            English
+          </button>
         </div>
       </footer>
     </nav>
