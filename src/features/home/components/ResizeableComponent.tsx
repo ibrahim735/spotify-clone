@@ -43,7 +43,7 @@ const ResizableComponent: React.FC = () => {
       {/* Divider */}
       <div
         onMouseDown={handleMouseDown}
-        className=" w-2 bg-gray-500 cursor-grab h-[95%] m-auto"
+        className=" w-2 bg-transparent cursor-grab h-[95%] m-auto hover:bg-[] "
       ></div>
 
       {/* Main Content */}
