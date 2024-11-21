@@ -19,7 +19,7 @@ export const buttonContents: ButtonContents[] = [
     { id: 4, text: "Continue with phone number" },
 ];
 
-const socialLogi = () => {
+const SocialLogin = () => {
     return (
         <div className="w-[324px] flex flex-col items-center justify-center ">
             <Link className="cursor-default" to="/">
@@ -32,8 +32,9 @@ const socialLogi = () => {
                     <Button key={data.id} icon={data.icon} text={data.text} />
                 ))}
             </div>
+
         </div>
     )
 }
 
-export default socialLogi
+export default SocialLogin

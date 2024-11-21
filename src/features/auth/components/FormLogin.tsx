@@ -15,7 +15,7 @@ const LoginForm = () => {
                     <input className="px-2 py-[10px] rounded-md w-full outline outline-offset-2 outline-1 bg-[#fffcc8] border-2" type="password" name="" id="" />
                 </div>
 
-                <button className=" mt-4 w-full px-7 py-3 border rounded-full bg-[#1ed760] text-[#000000] hover:scale-[1.03] hover:brightness-125 flex items-center justify-center border-transparent font-bold">
+                <button className=" mt-4 w-full px-7 py-3 border rounded-full bg-[#1ed760] text-[#000000] hover:scale-[1.03] hover:brightness-125 flex items-center justify-center border-transparent font-bold active:scale-90 transition-all">
                     Log In
                 </button>
             </form>

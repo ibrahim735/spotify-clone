@@ -2,7 +2,7 @@ import Button2 from "./components/Button2"
 import Navbar from "./components/Navbar"
 import ResizableComponent from "./components/ResizeableComponent"
 
-
+const code = new URLSearchParams(window.location.search).get('code')
 
 
 const Home = () => {
