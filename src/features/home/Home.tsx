@@ -2,7 +2,7 @@ import Button2 from "./components/Button2"
 import Navbar from "./components/Navbar"
 import ResizableComponent from "./components/ResizeableComponent"
 
-const code: any = new URLSearchParams(window.location.search).get('code')
+const code: string | null = new URLSearchParams(window.location.search).get('code')
 
 
 const Home = () => {
@@ -28,4 +28,3 @@ const Home = () => {
 }
 
 export default Home
-
