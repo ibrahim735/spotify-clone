@@ -3,7 +3,12 @@ import React, { useState } from "react";
 import SideNav from "./SideNav";       // Import SideNav component
 import MainContent from "./MainContent"; // Import MainContent component
 
-const ResizableComponent: React.FC = () => {
+type codeProps = {
+  code: string | null; // The code snippet to be displayed
+}
+
+
+const ResizableComponent: React.FC<codeProps> = ({code}) => {
   // Initial width for SideNav
   const [sideNavWidth, setSideNavWidth] = useState<number>(280); // Start at minimum width
 
@@ -47,7 +52,7 @@ const ResizableComponent: React.FC = () => {
       ></div>
 
       {/* Main Content */}
-      <MainContent />
+      <MainContent code={code}/>
     </div>
   );
 };
