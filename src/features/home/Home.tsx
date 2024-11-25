@@ -2,16 +2,16 @@ import Button2 from "./components/Button2"
 import Navbar from "./components/Navbar"
 import ResizableComponent from "./components/ResizeableComponent"
 
-const code = new URLSearchParams(window.location.search).get('code')
+const code: any = new URLSearchParams(window.location.search).get('code')
 
 
 const Home = () => {
 
-  return (
+  return (code ? "we have a code" :
     <div className="bg-[#000000] w-full min-h-screen flex flex-col p-2">
       <Navbar />
 
-      <ResizableComponent />
+      <ResizableComponent code={code} />
 
       <footer className=" flex items-center bg-gradient-to-r from-[#af2896] to-[#509bf5] w-full h-[66px] p-3 justify-between">
         <div>
@@ -28,3 +28,4 @@ const Home = () => {
 }
 
 export default Home
+
