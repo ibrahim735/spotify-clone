@@ -4,7 +4,6 @@ import { SiFacebook } from "react-icons/si";
 import { GrApple } from "react-icons/gr";
 import SocialLogin from "./components/SocialLogin.tsx"
 import FormLogin from "./components/FormLogin.tsx";
-import { Link } from "react-router-dom";
 
 
 
